@@ -47,7 +47,6 @@ struct CreateGame: View {
                 gameSession.startGame()
             }
             .buttonStyle(.borderedProminent)
-            .disabled(!gameSession.canStartGame)
         }
         .padding()
         .onAppear { gameSession.startAdvertising() }
